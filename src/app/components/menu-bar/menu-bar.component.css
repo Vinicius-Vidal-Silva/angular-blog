@@ -1,0 +1,10 @@
+.conteudoMenuBar > ul{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+}
+
+.conteudoMenuBar > ul > li{
+ margin-right: 20px;
+ list-style: none;
+}
