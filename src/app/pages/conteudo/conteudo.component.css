@@ -26,3 +26,12 @@
 .conteudoTexto > p{
   color: #D5DEEF;
 }
+
+button{
+  border-radius: 5px;
+  align-items: center;
+  background-color: #638ecb;
+  color: #D5DEEF;
+  width: 75px;
+  height: 30px;
+}

@@ -10,23 +10,23 @@ import { dataFake } from "../../dados/dataFake";
   styleUrl: './conteudo.component.css'
 })
 export class ConteudoComponent implements OnInit{
-  conteudoCapa:string = ""
-  conteudoTitle:string = ""
-  conteudoTexto:string = ""
-  private id:string|null = "0"
+  conteudoCapa:string|null = ""
+  conteudoTitle:string|null = ""
+  conteudoTexto:string|null = ""
+  private id:any = ""
 
   constructor(private route:ActivatedRoute
     ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe( value =>
-      this.id = value.get("id")
-    )
+      this.id = value.get("id"))
+
     this.setValuesToComponent(this.id)
   }
-  setValuesToComponent(id:string|null){
+  setValuesToComponent(id:string){
     const resultado = dataFake.filter(article =>
-      article.id = id)[0];
+      article.id = id)[0]
       this.conteudoTitle = resultado.title
       this.conteudoTexto = resultado.description
       this.conteudoCapa = resultado.foto
