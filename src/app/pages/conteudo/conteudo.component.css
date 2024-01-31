@@ -1,0 +1,28 @@
+.conteudoPagina{
+  border: 1px solid white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.conteudoCapa{
+  border: 1px solid white;
+}
+
+.conteudoCapa > img{
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 500px;
+  min-width: 500px;
+}
+
+.conteudoTexto{
+  margin-top: 15px;
+}
+
+.conteudoTexto > p{
+  color: #D5DEEF;
+}
