@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
 }
-.fotoSmallCard > img{
+.fotoSmallCard > a > img{
   min-width: 150px;
   max-width: 200px;
   margin-right: 20px;

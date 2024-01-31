@@ -1,13 +1,15 @@
 <div class="conteudoSmallCard">
   <div class="conteudoSmallCardDisplay">
       <div class="fotoSmallCard">
+        <a [routerLink]="['conteudo',id]">
         <img
             src="{{fotoCover}}"
             alt=""
         >
+        </a>
       </div>
       <div class="titleSmallCard">
-        <a href="{{cardLink}}" target="_blank">
+        <a [routerLink]="['conteudo',id]">
           <h1>{{cardTitle}}</h1>
         </a>
       </div>

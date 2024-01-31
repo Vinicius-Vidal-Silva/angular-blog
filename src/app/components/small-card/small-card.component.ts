@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { RouterOutlet, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './small-card.component.html',
   styleUrl: './small-card.component.css'
 })
@@ -13,7 +14,8 @@ export class SmallCardComponent implements OnInit{
   @Input()
   cardTitle: string = ""
   @Input()
-  cardLink: string = ""
+  id: string = "0"
+
   constructor(){}
 
   ngOnInit(): void {
