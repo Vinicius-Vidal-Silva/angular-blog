@@ -26,7 +26,7 @@ export class ConteudoComponent implements OnInit{
   }
   setValuesToComponent(id:string){
     const resultado = dataFake.filter(article =>
-      article.id = id)[0]
+      article.id === id)[0]
       this.conteudoTitle = resultado.title
       this.conteudoTexto = resultado.description
       this.conteudoCapa = resultado.foto

@@ -1,5 +1,4 @@
 .conteudoPagina{
-  border: 1px solid white;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -28,6 +27,7 @@
 }
 
 button{
+  margin-top: 10px;
   border-radius: 5px;
   align-items: center;
   background-color: #638ecb;
